@@ -63,10 +63,111 @@ body {
     color: var(--cinza-secundário); /* Define a cor cinza secundária */
 }
 
+.container__titulo {
+    font-size: 28px; /* Define o tamanho do título */
+    font-weight: 700; /* Deixa o título em negrito */
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0; /* Adiciona margens acima e abaixo da imagem */
+}
+
+.container__caixa {
+    margin: 0 6em; /* Adiciona espaçamento lateral de 6em */
+}
+
+.secundario__imagem {
+    width: 80%; /* Ajusta a largura da imagem para 80% do contêiner */
+}
+
+.secundario {
+    align-items: center; /* Centraliza os itens verticalmente */
+    margin: 0 10em; /* Define espaçamento lateral de 10em */
+}
+
+.descricao__titulo {
+    font-weight: 700; /* Define o peso da fonte como negrito */
+    font-size: 48px; /* Define um tamanho grande para o título */
+    color: var(--branco-principal); /* Aplica a cor branca ao título */
+    margin-bottom: 0.1em; /* Pequeno espaçamento abaixo do título */
+}
+
+.descricao__texto {
+    color: var(--cinza-secundário); /* Aplica a cor cinza ao texto */
+}
+
+.secundario__botao {
+    display: inline-block; /* Mantém o botão no fluxo do texto */
+    margin-top: 1em; /* Adiciona espaço acima do botão */
+}
+
+.container__descricao {
+    padding: 2em; /* Adiciona espaçamento interno ao contêiner de descrição */
+} 
+
+.dispositivos__lista {
+    display: flex; /* Usa Flexbox para organizar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    list-style-type: none; /* Remove os marcadores de lista */
+    margin: 5em 0; /* Define espaço acima e abaixo da lista */
+} 
+
+.dispositivos {
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+.dispositivos__titulo {
+    font-size: 48px; /* Define um tamanho grande para o título */
+}
+
+.lista__item {
+    font-size: 32px; /* Define um tamanho grande para os itens da lista */
+    color: var(--branco-principal); /* Aplica a cor branca aos itens da lista */
+}
+
 .lista__link a:hover {
     color: var(--botao-azul); /* Altera a cor do link ao passar o mouse */
 }
 
 .lista__link a:active {
     color: var(--botao-azul-efeito); /* Altera a cor do link quando clicado */
+}
+
+.footer {
+    display: flex;
+    flex-direction: column; /* Garante que os elementos do footer fiquem em coluna */
+    align-items: center; /* Centraliza os itens na horizontal */
+    text-align: center; /* Alinha textos no centro */
+    padding: 2em; /* Adiciona espaçamento interno ao contêiner de descrição */
+    margin-bottom: 2em; /* Pequeno espaçamento abaixo do título */
+}
+
+.footer__logo {
+    display: flex; /* Agora o alinhamento funciona */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-bottom: 1em; /* Espaço abaixo do logo */
+}
+
+.footer__lista {
+    display: flex; /* Mantém os itens da lista na mesma linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens da lista */
+    list-style-type: none; /* Remove os pontos da lista */
+    padding: 0; /* Remove padding padrão */
+    margin: 2em 0; /* Ajusta a posição da lista */
+}
+
+.footer__lista a{
+    color: var(--branco-principal); /* Usa a cor branca (ou escolha outra) */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 16px; /* Define um tamanho grande para o texto */
+    transition: color 0.3s ease; /* Efeito suave na mudança de cor */
+}
+
+.footer__texto {
+    font-size: 14px; /* Define um tamanho grande para o texto */
+    text-align: center; /* Centraliza o texto horizontalmente dentro do elemento */
+    margin: 0 auto 0em auto; /* Centraliza o texto */
+    max-width: 1000px; /* Evita que o texto fique muito largo */
 }
