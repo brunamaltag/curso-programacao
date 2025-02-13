@@ -1,0 +1,72 @@
+:root {
+    --branco-principal: #FFFFFF; /* Define a cor branca principal */
+    --cinza-secundário: #C0C0C0; /* Define a cor cinza secundária */
+    --botao-azul: #167bf7; /* Define a cor azul para botões */
+    --botao-azul-efeito: #004294; /* Define a cor azul escuro para efeito de clique */
+    --cor-de-fundo: #00030C; /* Define a cor de fundo principal */
+    --fonte-principal: 'Inter'; /* Define a fonte principal */
+}
+
+body {
+    background-color: var(--cor-de-fundo); /* Aplica a cor de fundo definida */
+    color: var(--branco-principal); /* Define a cor do texto como branco */
+    font-family: var(--fonte-principal); /* Aplica a fonte principal */
+    font-size: 16px; /* Define o tamanho do texto padrão */
+    font-weight: 400; /* Define a espessura da fonte */
+}
+
+* {
+    margin: 0; /* Remove as margens padrão de todos os elementos */
+    padding: 0; /* Remove os paddings padrão de todos os elementos */
+}
+
+.principal {
+    background-image: url("Img/Background.png"); /* Define uma imagem de fundo */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-size: contain; /* Ajusta a imagem para caber no contêiner */
+    align-items: center; /* Centraliza os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+}
+
+.container {
+    height: 100vh; /* Define a altura do contêiner como 100% da tela */
+    display: grid; /* Define um layout de grid */
+    grid-template-columns: 50% 50%; /* Divide o espaço em duas colunas iguais */
+}
+
+.container__botao {
+    background-color: var(--botao-azul); /* Define a cor de fundo do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão */
+    padding: 1em; /* Adiciona espaçamento interno */
+    color: var(--branco-principal); /* Define a cor do texto como branco */
+    display: block; /* Faz o botão ocupar a largura total */
+    text-decoration: none; /* Remove sublinhado de links */
+    margin-bottom: 1em; /* Adiciona espaço abaixo do botão */
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito); /* Altera a cor do botão ao passar o mouse */
+}
+
+.container__botao_secundario {
+    background-color: transparent; /* Torna o botão sem fundo */
+    border: 1px solid var(--branco-principal); /* Adiciona uma borda branca */
+    border-radius: 5px; /* Arredonda os cantos */
+    padding: 1em; /* Adiciona espaçamento interno */
+    color: var(--branco-principal); /* Define a cor do texto como branco */
+    display: block; /* Faz o botão ocupar a largura total */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.container__aviso {
+    font-size: 12px; /* Define um tamanho de fonte menor */
+    color: var(--cinza-secundário); /* Define a cor cinza secundária */
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul); /* Altera a cor do link ao passar o mouse */
+}
+
+.lista__link a:active {
+    color: var(--botao-azul-efeito); /* Altera a cor do link quando clicado */
+}
